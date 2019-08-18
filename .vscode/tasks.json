@@ -8,8 +8,11 @@
             "label": "g++-7 build active file",
             "command": "/usr/bin/g++-7",
             "args": [
+                "-std=c++1z",
                 "-g",
                 "${file}",
+                "-I",
+                "${fileDirname}/../include/", 
                 "-o",
                 "${fileDirname}/../bin/${fileBasenameNoExtension}"
             ],
@@ -20,22 +23,5 @@
                 "$gcc"
             ]
         },
-        {
-            "type": "shell",
-            "label": "g++-7 build file",
-            "command": "/usr/bin/g++-7",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/../bin/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "/usr/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
-        }
     ]
 }
