@@ -12,9 +12,9 @@
                 "-g",
                 "${file}",
                 "-I",
-                "${fileDirname}/../include/", 
+                "${workspaceRoot}/include/", 
                 "-o",
-                "${fileDirname}/../bin/${fileBasenameNoExtension}"
+                "${workspaceRoot}/bin/${fileBasenameNoExtension}.o"
             ],
             "options": {
                 "cwd": "/usr/bin"
