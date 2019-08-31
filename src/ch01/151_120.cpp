@@ -5,10 +5,11 @@
  * transactions, writing each transaction to the standard output.
 **/
 
-#include <iostream>
 #include <Sales_item.h>
+#include <iostream>
 
-int main () {
+int main()
+{
 
     Sales_item item;
 

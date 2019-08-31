@@ -10,5 +10,4 @@ struct SalesData
     double revenue = 0.0;
 };
 
-
 #endif

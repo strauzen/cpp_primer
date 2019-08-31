@@ -4,10 +4,12 @@
 
 #include <iostream>
 
-int main() {
+int main()
+{
     int v1 = 50, v2 = 100, sum = 0;
 
-    for (int i = 0; i <= v2; i++) {
+    for (int i = 0; i <= v2; i++)
+    {
         sum += i;
         ++i;
     }

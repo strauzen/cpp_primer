@@ -5,16 +5,18 @@
  * your Sales_data class in the same file as your main function.
 **/
 
-#include <string>
 #include <iostream>
+#include <string>
 
-struct Sales_data {
+struct Sales_data
+{
     std::string bookNo;
     unsigned units_sold = 0;
     double revenue = 0.0;
 };
 
-int main() {
+int main()
+{
 
     Sales_data data;
     while (std::cin >> data.bookNo)
@@ -24,7 +26,7 @@ int main() {
         data.revenue = data.units_sold * price;
 
         std::cout << data.bookNo << " " << data.units_sold << " " << data.revenue << " "
-            << (data.revenue / data.units_sold);
+                  << (data.revenue / data.units_sold);
     }
 
     return 0;

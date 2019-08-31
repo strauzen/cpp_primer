@@ -4,10 +4,11 @@
  * use it to rewrite the exercise from § 2.6.2 (p. 76).
 **/
 
-#include <iostream>
 #include "SalesData.h"
+#include <iostream>
 
-int main() {
+int main()
+{
 
     SalesData data;
     while (std::cin >> data.bookNo)
@@ -17,7 +18,7 @@ int main() {
         data.revenue = data.units_sold * price;
 
         std::cout << data.bookNo << " " << data.units_sold << " " << data.revenue << " "
-            << (data.revenue / data.units_sold);
+                  << (data.revenue / data.units_sold);
     }
 
     return 0;

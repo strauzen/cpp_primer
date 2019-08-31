@@ -1,11 +1,14 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     int currVal = 0, val = 0;
 
-    if(std::cin >> currVal) {
+    if (std::cin >> currVal)
+    {
         int count = 1;
-        while (std::cin >> val) {
+        while (std::cin >> val)
+        {
             if (val == currVal)
                 count++;
             else

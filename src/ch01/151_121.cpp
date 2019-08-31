@@ -3,10 +3,11 @@
  * have the same ISBN and produces their sum.
 **/
 
-#include <iostream>
 #include "../include/Sales_item.h"
+#include <iostream>
 
-int main() {
+int main()
+{
 
     Sales_item item1, item2;
 
@@ -15,11 +16,14 @@ int main() {
     std::cout << "Please add item 2 [Isbn, units sold, price]: " << std::endl;
     std::cin >> item2;
 
-    if (item1.isbn() == item2.isbn()) {
-        std::cout << "Data has been updated [Isbn, units sold, revenue, average price]: " 
-            << item1 + item2 << std::endl;
-            return 0;
-    } else {
+    if (item1.isbn() == item2.isbn())
+    {
+        std::cout << "Data has been updated [Isbn, units sold, revenue, average price]: "
+                  << item1 + item2 << std::endl;
+        return 0;
+    }
+    else
+    {
         std::cout << "The given items' isbn doesn't match";
         return -1;
     }

@@ -3,33 +3,37 @@
  * Modify your program to read a word at a time.
  **/
 #include <iostream>
-#include <string> 
+#include <string>
 
 using namespace std;
 
-void readLine() {
+void readLine()
+{
     string line;
 
-    while(getline(cin, line)) {
+    while (getline(cin, line))
+    {
         cout << line << endl;
     }
 }
 
-void readWord() {
+void readWord()
+{
     string word;
 
-    while(cin >> word) {
+    while (cin >> word)
+    {
         cout << word << endl;
     }
 }
 
-int main() {
+int main()
+{
     int option = 0;
-    
+
     cout << "Do you want to read lines (1) or words (2): " << endl;
     cin >> option;
     cout << "Please type something:" << endl;
-
 
     switch (option)
     {
@@ -40,7 +44,7 @@ int main() {
         readWord();
         break;
     default:
-        cout << "No valid option selected, exiting program." << endl; 
+        cout << "No valid option selected, exiting program." << endl;
         break;
     }
 

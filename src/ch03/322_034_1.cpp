@@ -6,21 +6,22 @@
 **/
 
 #include <iostream>
-#include <string> 
+#include <string>
 
 using namespace std;
 
-int main() {
-    
+int main()
+{
+
     string s1, s2;
-    
+
     cout << "Please write two strings: " << endl;
     cin >> s1 >> s2;
 
-    if (s1 == s2) 
+    if (s1 == s2)
         cout << "The strings are equal to each other." << endl;
-    else if (s1 > s2) 
+    else if (s1 > s2)
         cout << "The string: " + s1 + " is larger than: " + s2 << endl;
     else
-        cout << "The string: " + s2 + " is larger than: " + s1 << endl;  
+        cout << "The string: " + s2 + " is larger than: " + s1 << endl;
 }

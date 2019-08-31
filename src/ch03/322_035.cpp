@@ -10,13 +10,15 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
 
     string solution, input;
 
     cout << "Input a series of strings: " << endl;
 
-    while(cin >> input) {
+    while (cin >> input)
+    {
         solution += " " + input;
     }
 

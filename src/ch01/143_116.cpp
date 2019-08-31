@@ -5,16 +5,17 @@
 
 #include <iostream>
 
-int main() {
+int main()
+{
     int value = 0, sum = 0;
 
     std::cout << "Please provide a list of values you would like"
-        << "to add up. Press Ctrl+d to calculate." << std::endl;
+              << "to add up. Press Ctrl+d to calculate." << std::endl;
 
-    while(std::cin >> value) 
+    while (std::cin >> value)
         sum += value;
 
-    std::cout << "The sum of the given numbers is: " << sum << std::endl;   
+    std::cout << "The sum of the given numbers is: " << sum << std::endl;
 
     return 0;
 }

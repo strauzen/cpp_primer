@@ -8,7 +8,7 @@
 int main(int argc, char const *argv[])
 {
     int number = 9;
-    int * p;
+    int *p;
     *p = number;
     p = &number;
 

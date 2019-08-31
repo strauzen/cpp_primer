@@ -5,14 +5,16 @@
 
 #include <iostream>
 
-int main() {
+int main()
+{
     int v1 = 0, v2 = 0;
 
     std::cout << "Please input two values:" << std::endl;
-    std::cin >> v1 >> v2; 
+    std::cin >> v1 >> v2;
     std::cout << "The values between " << v1 << " and " << v2 << "inclisve, are: " << std::endl;
 
-    while (v1 <= v2) {
+    while (v1 <= v2)
+    {
         std::cout << v1 << ", ";
         ++v1;
     }

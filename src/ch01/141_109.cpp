@@ -4,10 +4,12 @@
 
 #include <iostream>
 
-int main() {
+int main()
+{
     int v1 = 50, v2 = 100, sum = 0, i = v1;
 
-    while (i <= v2) {
+    while (i <= v2)
+    {
         sum += i;
         ++i;
     }
