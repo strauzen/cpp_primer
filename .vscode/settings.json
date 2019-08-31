@@ -43,5 +43,8 @@
         "sstream": "cpp",
         "tuple": "cpp",
         "utility": "cpp"
-    }
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
 }
