@@ -21,9 +21,10 @@ void printVector(vector<int> v)
     cout << "Vector size: " << v.size() << endl;
     cout << "Vector contents:" << endl;
 
-    for (auto i : v)
+    auto it = v.begin();
+    for (it; it != v.end(); it++)
     {
-        cout << i << " ";
+        cout << *it << " ";
     }
 
     cout << endl;
@@ -34,9 +35,10 @@ void printVector(vector<string> v)
     cout << "Vector size: " << v.size() << endl;
     cout << "Vector contents:" << endl;
 
-    for (auto i : v)
+    auto it = v.begin();
+    for (it; it != v.end(); it++)
     {
-        cout << i << " ";
+        cout << *it << " ";
     }
 
     cout << "\n"
