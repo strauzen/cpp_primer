@@ -4,8 +4,13 @@
 
 #include <iostream>
 #include <vector>
+#include <iterator>
 
-using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
+using std::iterator;
+using std::vector;
 
 int main()
 {
@@ -17,9 +22,13 @@ int main()
     }
 
     vector<int> solution;
-    for (auto it = v.begin(), it2 = v.end(); it != it2; it++)
+    auto begin = v.begin();
+    auto end = v.end();
+    auto mid = v.begin() + (end - begin) / 2;
+    begin = mid + 1;
+    for (; begin != end; it++)
     {
-        if (it != v.size() - i - 1)
+        if (it != (v.end() - it) - 1)
         {
             solution.push_back(v[i] + v[v.size() - i - 1]);
         }
