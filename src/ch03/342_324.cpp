@@ -1,5 +1,9 @@
 /**
- * Exercise 3.24: Redo the last exercise from § 3.3.3 (p. 105) using iterators
+ * Exercise 3.24: Redo the last exercise from § 3.3.3 (p. 105) using iterators: 
+ * Read a set of integers into a vector. Print the sum of each
+ * pair of adjacent elements. Change your program so that it prints the sum of
+ * the first and last elements, followed by the sum of the second and second-tolast, 
+ * and so on.
  **/
 
 #include <iostream>
@@ -22,21 +26,11 @@ int main()
     }
 
     vector<int> solution;
-    auto begin = v.begin();
-    auto end = v.end();
-    auto mid = v.begin() + (end - begin) / 2;
-    begin = mid + 1;
-    for (; begin != end; it++)
+    auto it = solution.begin();
+
+    for (auto begin = v.begin(), end = v.end() - 1; begin <= end; begin++, end--, it++)
     {
-        if (it != (v.end() - it) - 1)
-        {
-            solution.push_back(v[i] + v[v.size() - i - 1]);
-        }
-        else
-        {
-            solution.push_back(v[i]);
-        }
-        it2 = it2 - it;
+        solution.push_back(*begin + *end);
     }
 
     cout << "The solution is: " << endl;
